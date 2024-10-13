@@ -1,0 +1,237 @@
+@keyframes aumentar {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+.container {
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html{
+    height: 100vh;
+    margin-right: 0;
+}
+
+.titulo {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    background-color: #205258;
+}
+
+#h1-titulo {
+    color: white;
+    margin-top: 2vh;
+    font-size: 5vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.indicadores {
+    margin-top: -8vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    height: 20vh;
+}
+
+#h3-entradas {
+    font-size: 4vh;
+}
+
+#valor-entrada {
+    font-size: 7vh;
+}
+
+.entradas {
+    gap: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 20vh;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#h3-saidas {
+    font-size: 4vh;
+}
+
+#valor-saidas {
+    font-size: 7vh;
+}
+
+.saidas {
+    gap: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 20vh;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#h3-total {
+    font-size: 4vh;
+}
+
+#valor-total {
+    font-size: 7vh;
+}
+
+.total {
+    margin-right: 0;
+    gap: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 30vw;
+    height: 20vh;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.formulario {
+    border-radius: 6px;
+    height: 10vh;
+    margin: 6vh;
+    width: 94.3vw;
+    margin-left: 2.8vw;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+h4 {
+    display: inline;
+}
+
+.descricao {
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-descricao {
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+
+.valor {
+    margin-left: 19vw;
+    display: flex;
+    flex-direction: column;    
+}
+
+#input-valor {
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+
+.entrada-saida {
+    padding-left: 19vw;
+    display: flex;
+    gap: 2vw;
+}
+
+#adicionar-despesa {
+    margin-left: 10vw;
+    width: 7vw;
+    height: 5vh;
+    background-color: #10aa6f;
+    border: none;
+}
+
+.tabela {
+    padding: 0;
+    border-collapse: collapse;
+    border-radius: 10px;
+    display: flex;
+    height: 39vh;
+    margin: 6vh 0 0;
+    margin-left: 2.8vw;
+    width: 94.3vw;
+    background-color: white;
+    max-height: 39vh;
+    max-width: 94.3vw;
+    overflow-x: auto;
+}
+
+tbody {
+    display: block;
+    max-height: 39vh;
+    max-width: 100vw;
+}
+
+th {
+    border-bottom: 1px solid lightgray;
+    padding-top: 1.2vh;
+    padding-bottom: 1.5vh;
+    font-size: 2.6vh;
+}
+
+td {
+    font-size: 2.1vh;
+    padding-top: 1.2vh;
+}
+
+img {
+    width: 2vw;
+    height: 3.4vh;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    animation: aumentar 0.7s infinite;
+}
+
+img:active {
+    transform: scale(0.95);
+}
+
+
+th, td {
+    text-align: left; 
+    padding-left: 8vw;
+}
+
+#valor-entrada {
+    color: green;
+}
+
+#valor-saidas {
+    color: red;
+}
+
+#valor-total {
+    color: red;
+}

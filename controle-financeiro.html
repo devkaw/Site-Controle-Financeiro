@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Despesas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');</style>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1 id="h1-titulo" class="kanit-medium">Controle Financeiro</h1>
+        </div>
+        <div class="indicadores">
+            <div class="entradas">
+                <h3 id="h3-entradas" class="kanit-thin">Entradas</h3>
+                <h1 id="valor-entrada" class="kanit-medium">R$ <span id="valor-real-entrada">0</span></h1>
+            </div>
+            <div class="saidas">
+                <h3 id="h3-saidas" class="kanit-thin">Saídas</h3>
+                <h1 id="valor-saidas" class="kanit-medium">R$ <span id="valor-real-saida">0</span></h1>
+            </div>
+            <div class="total">
+                <h3 id="h3-total" class="kanit-thin">Saldo</h3>
+                <h1 id="valor-total" class="kanit-medium">R$ <span id="valor-real-total">0</span></h1>
+            </div>
+        </div>
+        <div class="formulario">
+            <div class="descricao">
+                <h4 class="kanit-thin" id="h4-descricao">Descrição</h4>
+                <input type="text" class="kanit-thin" id="input-descricao">
+            </div>
+            <div class="valor">
+                <h4 class="kanit-thin" id="h4-valor">Valor</h4>
+                <input type="text" class="kanit-thin" id="input-valor">
+            </div>
+            <div class="entrada-saida">
+                <h4 class="kanit-thin" id="h4-descricao"><input type="radio" name="opcao" id="entrada" value="entrada"> Entrada</h4>
+                <h4 class="kanit-thin" id="h4-descricao"><input type="radio" name="opcao" id="saida" value="saida"> Saída</h4>
+            </div>
+            <button id="adicionar-despesa" class="kanit-medium">ADICIONAR</button>
+        </div>
+        <table class="tabela">
+            <tr class="cabecalho-tabela">
+                <th class="kanit-medium">Descrição</th>
+                <th class="kanit-medium">Data e Hora</th>
+                <th class="kanit-medium">Valor</th>
+                <th class="kanit-medium">Tipo</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sql.js@1.6.2/dist/sql-wasm.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

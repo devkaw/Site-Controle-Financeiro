@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os itens no topo */
+    margin: 0; 
+    padding: 0;
+    height: 100vh;
+    background-color: #205258;
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#titulo {
+    margin-top: 1vh;
+    color: white;
+    font-size: 7vh;
+}
+
+.forms-container {
+    display: flex; /* Permite o uso de flexbox para os formulários */
+    align-items: flex-start; /* Alinha os formulários no topo */
+    justify-content: center;
+    gap: 3vw; /* Espaço entre os formulários */
+}
+
+.linha {
+    height: 70vh; /* Ajuste a altura da linha para que corresponda ao formulário */
+    width: 0.01vw;
+    border: 1px solid lightgray;
+}
+
+form {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha os itens no topo */
+    background-color: white;
+    border: 1px solid black;
+    height: 70vh; /* Ajuste a altura conforme necessário */
+    border-radius: 30px;
+    padding: 3vh; /* Adiciona espaço interno aos formulários */
+    width: 25vw;
+}
+
+.titulo-formularios {
+    font-size: 10vh;
+    margin: 0; /* Remove a margem padrão */
+    margin-bottom: 30vh; /* Adiciona espaço entre o título e os campos do formulário */
+}
+
+.elementos {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 20vw;
+}
+
+input {
+    height: 3vh;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7vh;
+    width: 15vw;
+    height: 5vh;
+    font-size: 3vh;
+    background-color: rgb(5, 72, 64);
+    color: white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login/cadastro!</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');</style>
+    <link rel="stylesheet" href="login-registro.css" id="css-link">
+</head>
+<body>
+    <h1 class="kanit-medium" id="titulo">Controle Financeiro</h1>
+    <div class="forms-container">
+        <form id="login-form">
+            <h1 class="kanit-medium titulo-formularios">Login</h1>
+            <div class="elementos">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+            </div>
+            <button type="submit" class="kanit-medium">Entrar</button>
+        </form>
+        
+        <div class="linha"></div>
+        
+        <form id="registro-form">
+            <h1 class="kanit-medium titulo-formularios">Registro</h1>
+            <div class="elementos">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+            </div>
+            <button type="submit" class="kanit-medium">Cadastrar</button>
+        </form> 
+
+        <div class="linha"></div>
+
+        <form id="remocao-form">
+            <h1 class="kanit-medium titulo-formularios">Remoção</h1>
+            <div class="elementos">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+            </div>
+            <button type="submit" class="kanit-medium">Remover</button>
+        </form>        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sql.js@1.6.2/dist/sql-wasm.js"></script>
+    <script src="login-registro.js"></script>
+</body>
+</html>
